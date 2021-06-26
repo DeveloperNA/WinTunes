@@ -1,0 +1,122 @@
+﻿  main.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,22): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,34): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,15): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,15): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+  Mp3Player.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,22): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,34): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,15): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,15): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,9): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,21): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,2): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,2): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34,9): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34,21): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34,2): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34,2): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(34,80): error C2514: 'std::vector': class template cannot be constructed
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(35,12): error C2663: 'std::vector<_Ty,_Alloc>::begin': 2 overloads have no legal conversion for 'this' pointer
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(36,8): error C2663: 'std::vector<_Ty,_Alloc>::end': 2 overloads have no legal conversion for 'this' pointer
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(37,12): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(37,39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(37,39): error C2143: syntax error: missing ',' before '&'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(38,11): error C2065: 'lhs': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(38,35): error C2065: 'rhs': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(35,2): error C2672: 'sort': no matching overloaded function found
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(40,2): error C2780: 'void std::sort(const _RanIt,const _RanIt,_Pr)': expects 3 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\algorithm(7395): message : see declaration of 'std::sort'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(42,21): error C2664: 'void Mp3Player::setList(std::vector)': cannot convert argument 1 from 'std::vector' to 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(42,21): message : Cannot copy construct class 'std::vector' due to ambiguous copy constructors or no available copy constructor
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.h(15,7): message : see declaration of 'Mp3Player::setList'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(45,32): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(45,44): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(45,25): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(45): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(45,25): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,7): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,19): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,35): error C2146: syntax error: missing ';' before identifier 'file'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,40): error C2143: syntax error: missing ';' before ':'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,40): error C2143: syntax error: missing ')' before ':'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,40): error C2059: syntax error: ':'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,50): error C2059: syntax error: ')'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(53,52): error C2143: syntax error: missing ';' before '{'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(54,50): error C2065: 'file': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(54,110): error C2065: 'file': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(55,35): error C2065: 'file': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(55,83): error C2065: 'file': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(55,117): error C2065: 'file': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(55,28): error C2440: '<function-style-cast>': cannot convert from 'int' to 'Song'
+D:\Programming\CPP\Mp3Player\Mp3Player\Mp3Player.cpp(55,28): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+  Playlist.cpp
+  Song.cpp
+  Utils.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,9): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,21): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,2): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.h(15,2): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(34,23): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(41,8): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(41,20): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(41,1): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(41): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(41,1): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(42,1): error C2079: 'Utils::getAllFiles' uses undefined class 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,12): error C2653: 'filesystem': is not a class or namespace name
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,24): error C2065: 'directory_entry': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,5): error C2923: 'std::vector': 'directory_entry' is not a valid template type argument for parameter '_Ty'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43): message : see declaration of 'directory_entry'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,5): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,46): error C2133: 'files': unknown size
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(43,41): error C2512: 'std::vector': no appropriate default constructor available
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(443,1): message : see declaration of 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,14): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,26): error C2039: 'recursive_directory_iterator': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(24): message : see declaration of 'std'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,55): error C2065: 'recursive_directory_iterator': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,55): error C2146: syntax error: missing ';' before identifier 'it'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,70): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,82): error C3083: 'directory_options': the symbol to the left of a '::' must be a type
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,101): error C2039: 'skip_permission_denied': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(24): message : see declaration of 'std'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,123): error C2065: 'skip_permission_denied': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(46,55): error C3861: 'it': identifier not found
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(47,14): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(47,26): error C2039: 'recursive_directory_iterator': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\vector(24): message : see declaration of 'std'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(47,55): error C2065: 'recursive_directory_iterator': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(47,55): error C2146: syntax error: missing ';' before identifier 'end'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(47,55): warning C4551: function call missing argument list
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,14): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,18): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): error C2563: mismatch in formal parameter list
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): error C2568: '!=': unable to resolve function overload
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): message : could be '_Ty *std::end(_Ty (&)[_Size]) noexcept'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): message : or       'unknown-type std::end(const _Container &)'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): message : or       'unknown-type std::end(_Container &)'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,27): message : or       'const _Elem *std::end(std::initializer_list<_Elem>) noexcept'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(49,29): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(50,17): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(51,34): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(52,50): error C2065: 'it': undeclared identifier
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(56,17): error C2440: 'return': cannot convert from 'std::vector' to 'std::vector'
+D:\Programming\CPP\Mp3Player\Mp3Player\Utils.cpp(56,17): message : Cannot copy construct class 'std::vector' due to ambiguous copy constructors or no available copy constructor
