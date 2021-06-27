@@ -95,7 +95,9 @@ void Playlist::viewAll()
 				int id = jtr->at("id");
 				wstring name = jtr->at("Name");
 				wcout <<  id << "\t";
+
 				wcout <<  name << endl;
+				
 			}
 			wcout << "\n------------------------------------------------\n";
 		}

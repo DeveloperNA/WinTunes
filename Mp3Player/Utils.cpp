@@ -14,9 +14,9 @@ vector<wstring> Utils::getDriveList()
     vector<wstring> drives;
     if (test != 0)
     {
-        wcout << "GetLogicalDriveStrings() return value " << test << endl;
-        wcout << "Error if any: " << GetLastError() << endl;
-        wcout << "The Drives in the machine are: " << endl;
+        //wcout << "GetLogicalDriveStrings() return value " << test << endl;
+        //wcout << "Error if any: " << GetLastError() << endl;
+        wcout << "Drives Found: " << endl;
         // the lpBuffer contains all the drives in the system which is of wchar_t type.
         // lpBuffer stores a character in two bytes.
         // C  :  \  '\0'  D  :  \  '\0'  '\0'
@@ -32,9 +32,9 @@ vector<wstring> Utils::getDriveList()
     }
 
     for (int i = 0; i < drives.size(); i++) {
-        wcout << drives[i] << endl;
+        wcout << drives[i] << "\t";
     }
-    wcout << endl;
+    wcout << endl << endl;
     return drives;
 }
 
@@ -43,7 +43,7 @@ vector<wstring> Utils::removeCDDrive(vector<wstring> drives)
     for (vector<wstring>::iterator drive = drives.begin(); drive != drives.end(); ) {
         if (DRIVE_CDROM == GetDriveType(drive->c_str())) {
             drive = drives.erase(drive);
-            wcout << "removed CD drive" << endl;
+            //wcout << "removed CD drive" << endl;
         }
         else {
             drive++;

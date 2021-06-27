@@ -9,7 +9,3 @@ Song::Song(int id, wstring name, wstring path, double size)
 }
 
 
-void Song::viewInfo()
-{
-
-}

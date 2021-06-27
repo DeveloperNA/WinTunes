@@ -10,11 +10,16 @@ using namespace std;
 
 #pragma comment(lib, "winmm.lib")
 
-
+void welcomeText()
+{
+	wcout << "Welcome to WINTUNES MUSIC PLAYER" << endl << endl;
+}
 
 Mp3Player::Mp3Player()
 {
 	wstring username = Utils::getCurrentUsername();
+	welcomeText();
+
 	vector<wstring> cDrive{
 		L"C:\\Users\\" + username + L"\\OneDrive\\",
 		L"C:\\Users\\" + username + L"\\Downloads\\",
@@ -76,12 +81,22 @@ list<Song>::iterator Mp3Player::getCurrentSong()
 
 void Mp3Player::play()
 {
+	DWORD res;
+//	wchar_t err[256];
+
 	list<Song>::iterator it = currentSong;
 	wcout.flush();
 	wcout << "Currently Playing Song : " << it->name << endl;
 	if (it != songQueue.end()) {
-		wstring command = L"play " + it->path;
-		mciSendString(command.c_str(), NULL, 0, NULL);
+		wstring command = L"open \"" + it->path + L"\" type mpegvideo";
+		res = mciSendString(command.c_str(), NULL, 0, NULL);
+
+		//if (mciGetErrorString(res, err, 256))
+		//	wcout << err << endl;
+		command = L"play \"" + it->path + L"\"";
+		res = mciSendString(command.c_str(), NULL, 0, NULL);
+		//if (mciGetErrorString(res, err, 256))
+		//	wcout << err << endl;
 	}
 }
 
@@ -90,7 +105,7 @@ void Mp3Player::pause()
 	list<Song>::iterator it = currentSong;
 
 	if (it != songQueue.end()) {
-		wstring command = L"pause " + it->path;
+		wstring command = L"pause \"" + it->path + L"\"";
 		mciSendString(command.c_str(), NULL, 0, NULL);
 	}
 }
@@ -100,9 +115,9 @@ void Mp3Player::stop()
 	list<Song>::iterator it = currentSong;
 
 	if (it != songQueue.end()) {
-		wstring command = L"stop " + it->path;
+		wstring command = L"stop \"" + it->path + L"\"";
 		mciSendString(command.c_str(), NULL, 0, NULL);
-		wstring closecommand = L"close " + it->path;
+		wstring closecommand = L"close \"" + it->path + L"\"";
 		mciSendString(closecommand.c_str(), NULL, 0, NULL);
 	}
 }
@@ -113,7 +128,7 @@ wstring Mp3Player::status()
 	list<Song>::iterator it = currentSong;
 
 	if (it != songQueue.end()) {
-		wstring command = L"status " + it->path + L" mode";
+		wstring command = L"status \"" + it->path + L"\" mode";
 		wchar_t response[256];
 
 		mciSendString(command.c_str(), response, 256, NULL);

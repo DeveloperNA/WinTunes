@@ -146,10 +146,10 @@ int main()
             system("CLS");
             cpchoice = 1;
             if (mp3.playlist.empty()) {
-                cout << "No Playlist created..." << endl;
+                wcout << "No Playlist created..." << endl;
             }
             wcout << "Enter the name for playlist: " << endl;
-            cin >> name;
+            getline(cin >> ws,  name);
 
             while (cpchoice) {
                 wcout << "1.Add song\n2.Remove song\n3.Remove All songs\n4.Ok\n5.Close" << endl;
@@ -197,6 +197,10 @@ int main()
                 mp3.songQueue = mp3.playlist.getSongs(name);
                 
                 list<Song>::iterator itr = mp3.songQueue.begin();
+                if (mp3.songQueue.empty()) {
+                    wcout << "Playlist Unavailable" << endl;
+                    break;
+                }
                 while (true) {
                     if (itr == mp3.songQueue.end())
                         itr = mp3.songQueue.begin();
@@ -331,9 +335,10 @@ int playController(Mp3Player& mp3, list<Song>& tlist)
             }
             else {
                 mp3.setCurrentSong(tlist.back().id, tlist);
+                mp3.play();
             }
             
-            mp3.play();
+            
             
 
             wcout << "\npress 4 to previous song...\npress 5 to pause...\npress 6 to next song...\npress 0 to back..." << endl;
